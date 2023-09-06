@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Powersports Type</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Powersports Vehicle Type</h1>
+    <p id="description">Please fill out this form to let us know who you are and what kind of unit you ride</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="first-name">Enter Your First Name: <input id="name" name="first-name" type="text" required placeholder="john" /></label>
+        <label id="name-label" for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Doe" /></label>
+        <label id="number-label" for="number">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="32" /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="johndoe@johndoe.com" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="Yamaha"><input value="0" id="yamaha" type="radio" name="vehicle-manufacture" class="inline" /> Yamaha</label>
+        <label for="polaris"><input value="1" id="polairs" type="radio" name="vehicle-manufacture" class="inline" /> Polaris</label>
+        <label for="kawasaki"><input value="2" id="kawasaki" type="radio" name="vehicle-manufacture" class="inline" /> Kawasaki</label>
+      </fieldset>
+      <fieldset>
+        <label for="unit-picture">Upload a picture of the unit: <input id="unit-picture" type="file" name="file" /></label>
+        <label for="referrer"> Do you like the ride?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Kind of</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="stock"><input id="stock" class="inline" type="checkbox" value="0">All Stock</label>
+        <label for="aftermarket"><input id="aftermarket" value="1" class="inline" type="checkbox">Some Aftermarket Parts</label>
+        <label for="bio">Provide a descripton of how you ride:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like to ride the trails..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
